@@ -88,7 +88,7 @@ dialog.addEventListener('close', () => {
   lastProjectButton?.focus({ preventScroll: true });
 });
 
-document.querySelector('#copy-email').addEventListener('click', async () => {
+document.querySelector('#copy-email')?.addEventListener('click', async () => {
   const status = document.querySelector('#copy-status');
   const button = document.querySelector('#copy-email');
   try {
